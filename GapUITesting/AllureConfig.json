@@ -1,0 +1,38 @@
+{
+  "allure": {
+    "directory": "allure-results",
+    "packages": {
+      "package": "^package:?(.+)",
+      "testClass": "^class:?(.+)",
+      "testMethod": "^method:?(.+)"
+    }
+
+  },
+  "specflow": {
+    "stepArguments": {
+      "convertToParameters": "true",
+      "paramNameRegex": "",
+      "paramValueRegex": ""
+    },
+    "grouping": {
+      "suites": {
+        "parentSuite": "^parentSuite:?(.+)",
+        "suite": "^suite:?(.+)",
+        "subSuite": "^subSuite:?(.+)"
+      },
+      "behaviors": {
+        "epic": "^epic:?(.+)",
+        "story": "^story:(.+)"
+      }
+    },
+    "labels": {
+      "owner": "^author:?(.+)",
+      "severity": "^(normal|blocker|critical|minor|trivial)"
+    },
+    "links": {
+      "tms": "^story:(.+)",
+      "issue": "^issue:(.+)",
+      "link": "^link:(.+)"
+    }
+  }
+}

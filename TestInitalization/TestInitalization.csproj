@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Allure.Commons" Version="2.4.2.4" />
+    <PackageReference Include="NUnit" Version="3.11.0" />
+    <PackageReference Include="NUnit.Allure" Version="1.0.6-beta30" />
+    <PackageReference Include="Selenium.Firefox.WebDriver" Version="0.23.0" />
+    <PackageReference Include="Selenium.Mozilla.Firefox.Webdriver" Version="0.6.0.1" />
+    <PackageReference Include="Selenium.Support" Version="3.141.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="73.0.3683.68" />
+    <PackageReference Include="Selenium.WebDriver.IEDriver" Version="3.141.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Logger\Logger.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Selenium.WebDriverBackedSelenium">
+      <HintPath>..\..\..\..\..\..\Selenium-WebDriver_notnet\net40\Selenium.WebDriverBackedSelenium.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver">
+      <HintPath>..\..\..\..\..\..\Selenium-WebDriver_notnet\net40\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support">
+      <HintPath>..\..\..\..\..\..\Selenium-WebDriver_notnet\net40\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
